@@ -16,6 +16,13 @@ node index.js
 
 navigate to localhost:3000
 
+## Background and factors to consider
+
+First things first, go read ["Javascript Internationalization" by Kevin Scott](https://medium.com/@thekevinscott/javascript-internationalization-8952c0538d69) he did a phenomenal job of summarizing a lot of terminology and situations that need to be accounted for within internationalization and localization, and he did so in an easy to read way.
+
+The article and therefore Kevin's review of frameworks is dated, he didn't cover how to switch between locales, and he didn't cover a few specific items (numbers, dates, language specific comparisons, addresses, phone numbers, validation). So this repo will cover some of the topics that he didn't cove (names, dates, & language specific comparisons), as well as a more up-to-date review of relevant frameworks.
+
+
 ## Libraries to look at
 
 * https://www.i18next.com/
