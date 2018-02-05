@@ -15,6 +15,13 @@ function i18nextInit() {
 						date: "Today's date is {{date, MM/DD/YYYY}}.",
 					},
 				},
+				es: {
+					translation: {
+						helloWorld: 'hola mundo',
+						greeting: 'Me llamo {{user.firstName.letras}} {{user.lastName.letras}}.',
+						date: 'Hoy es {{date, MM/DD/YYYY}}',
+					},
+				},
 				jp: {
 					translation: {
 						helloWorld: 'ハローワールド',
@@ -53,11 +60,13 @@ function updateContent() {
 			roman: 'Tyler',
 			kana: 'タイラー',
 			akshar: 'टायलर',
+			letras: 'Tyler',
 		},
 		lastName: {
 			roman: 'Hansen',
 			kana: 'ハンセン',
 			akshar:'हैनसेन',
+			letras: 'Hansen',
 		},
 	};
 	document.getElementById('output').innerHTML = i18next.t('helloWorld');
