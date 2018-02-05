@@ -1,4 +1,27 @@
-<link rel="stylesheet" type="text/css" href="css/index.css">
-<script type="text/javascript" src="js/index.js"></script>
+<head>
+    <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+    <script src="js/i18next.js"></script>
+</head>
 
-<div id='hello' onclick="changeDiv('hello')">Hello</div>
+<body onload="i18nextInit()">
+    <div style="height: 100px">
+        <button onclick="changeLng('en')">
+        English
+        </button>
+        <button onclick="changeLng('jp')">
+        Japanese
+        </button>
+        <div id="output" />
+    </div>
+    <div>
+        <h2>Interplation:</h2>
+        <div id="interpolation" />
+    </div>
+    <div>
+        <h2>Formatting:</h2>
+        <div id="formatting" />
+    </div>
+</body>
+
+
+
