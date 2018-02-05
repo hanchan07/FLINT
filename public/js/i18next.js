@@ -9,7 +9,7 @@ function i18nextInit() {
 			resources: {
 				en: {
 					translation: {
-						key: 'hello world',
+						helloWorld: 'hello world',
 						greeting:
 							'My name is {{user.firstName.roman}} {{user.lastName.roman}}.',
 						date: "Today's date is {{date, MM/DD/YYYY}}.",
@@ -17,10 +17,18 @@ function i18nextInit() {
 				},
 				jp: {
 					translation: {
-						key: 'ハローワールド',
+						helloWorld: 'ハローワールド',
 						greeting:
 							'私の名前は{{user.lastName.kana}} {{user.firstName.kana}}です。',
 						date: '今日は{{date, 年YYYY月MM日DD}}です。',
+					},
+				},
+				hi: {
+					translation: {
+						helloWorld: 'नमस्ते दुनिया',
+						greeting:
+							'मेरा नाम है {{user.firstName.akshar}} {{user.lastName.akshar}}.',
+						date: 'आज तारीख है {{date, DD/MM/YYYY}}',
 					},
 				},
 			},
@@ -44,13 +52,15 @@ function updateContent() {
 		firstName: {
 			roman: 'Tyler',
 			kana: 'タイラー',
+			akshar: 'टायलर',
 		},
 		lastName: {
 			roman: 'Hansen',
 			kana: 'ハンセン',
+			akshar:'हैनसेन',
 		},
 	};
-	document.getElementById('output').innerHTML = i18next.t('key');
+	document.getElementById('output').innerHTML = i18next.t('helloWorld');
 	document.getElementById('interpolation').innerHTML = i18next.t('greeting', {
 		user,
 	});
