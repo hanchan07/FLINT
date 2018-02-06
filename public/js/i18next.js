@@ -65,7 +65,7 @@ function updateContent() {
 		lastName: {
 			roman: 'Hansen',
 			kana: 'ハンセン',
-			akshar:'हैनसेन',
+			akshar: 'हैनसेन',
 			letras: 'Hansen',
 		},
 	};
@@ -74,9 +74,9 @@ function updateContent() {
 		user,
 	});
 	//Put this back in when we figure out how to implement moment.js on the front-end
-	/*document.getElementById("formatting").innerHTML = i18next.t("date", {
+	document.getElementById('formatting').innerHTML = i18next.t('date', {
 		date: new Date(),
-	});*/
+	});
 }
 
 function changeLng(lng) {
