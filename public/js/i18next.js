@@ -61,7 +61,6 @@ function updateContent() {
 			roman: 'Tyler',
 			kana: 'タイラー',
 			akshar: 'टायलर',
-
 		},
 		lastName: {
 			roman: 'Hansen',
