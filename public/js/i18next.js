@@ -46,6 +46,14 @@ function i18nextInit() {
 						date: 'आज तारीख है {{date, DD/MM/YYYY}}',
 					},
 				},
+				eo: {
+					translation: {
+						helloWorld: 'saluton mondo',
+						greeting:
+							'Mia nomo estas {{user.firstName.roman}} {{user.lastName.roman}}.',
+						date: 'Hodiaŭa dato estas {{date, DD/MM/YYYY}}',
+					},
+				},
 			},
 			interpolation: {
 				format: function(value, format, lng) {
