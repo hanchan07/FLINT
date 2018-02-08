@@ -30,6 +30,14 @@ function i18nextInit() {
 						date: '今日は{{date, 年YYYY月MM日DD}}です。',
 					},
 				},
+				fr: {
+					translation: {
+						helloWorld: 'bonjour monde',
+						greeting:
+							"Je m'appelle {{user.firstName.roman}} {{user.lastName.roman}}.",
+						date: "La date d'aujourd'hui est {{date, MM/DD/YYYY}}.",
+					},
+				},
 				hi: {
 					translation: {
 						helloWorld: 'नमस्ते दुनिया',
