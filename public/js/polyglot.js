@@ -1,13 +1,8 @@
-let polyglot = require('node-polyglot');
+function test() {
+	const Polyglot = libraries.polyglot;
+	const polyglot = new Polyglot();
+	polyglot.extend({ hello: 'Sup Dude' });
 
-function polyglotInit() {
-	//polyglot = new polyglot();
-}
-
-function doTheStuff() {
-	/*polyglot.extend({
-		hello: 'Hello Dude!',
-	});*/
-
-	console.log('hi there !!!!!!!!!!!!!');
+	console.log('polyglot: ', polyglot.t('hello'));
+	console.log(libraries.moment().format('dddd'));
 }

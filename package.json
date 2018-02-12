@@ -13,6 +13,8 @@
   "dependencies": {
     "express": "4.16.2",
     "i18next": "^10.3.0",
-    "moment": "^2.20.1"
+    "l10ns": "^2.4.11",
+    "moment": "^2.20.1",
+    "node-polyglot": "^2.2.2"
   }
 }
