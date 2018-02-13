@@ -59,33 +59,26 @@
 	
 	### Strings with Interpolation
 	
-```
+```js
 {
-	lng: 'en',
-	debug: true,
-	resources: {
-		en: {
-			translation: {
-				string1: 'hello world',
-				string2:
-					'My name is {{user.firstName.roman}} {{user.lastName.roman}}.',
-				}
-			},
-		},
-		es: {
-			translation: {
-				string1: 'hola mundo',
-				string2: 'Me llamo {{user.firstName.letras}} {{user.lastName.letras}}.',
-			},
-		},
-	},
-	interpolation: {
-		format: function(value, format, lng) {
-			if (value instanceof Date)
-				return moment(value).format(format);
-			return value;
-		},
-	},
+    lng: 'en',
+    debug: true,
+    resources: {
+        en: {
+            translation: {
+                string1: 'hello world',
+                string2:
+                    'My name is {{user.firstName.roman}} {{user.lastName.roman}}.',
+                }
+            },
+        },
+        es: {
+            translation: {
+                string1: 'hola mundo',
+                string2: 'Me llamo {{user.firstName.letras}} {{user.lastName.letras}}.',
+            },
+        },
+    },
 },
 ```
 	
@@ -93,7 +86,47 @@
 	
 	### Pluralization
 	
-	summary
+```
+{
+    lng: 'en',
+    debug: true,
+    resources: {
+        en: {
+            translation: {
+                helloWorld: 'hello world',
+                greeting:
+                    'My name is {{user.firstName.roman}} {{user.lastName.roman}}.',
+                date: "Today's date is {{date, MM/DD/YYYY}}.",
+                plural: {
+                    "thing":                 "item",
+                    "thing_plural":          "items",
+                    "thingWithCount":        "{{count}} item",
+                    "thingWithCount_plural": "{{count}} items"
+                }
+            },
+        },
+        es: {
+            translation: {
+                helloWorld: 'hola mundo',
+                greeting: 'Me llamo {{user.firstName.letras}} {{user.lastName.letras}}.',
+                date: 'Hoy es {{date, MM/DD/YYYY}}',
+            },
+        },
+    },
+
+    plural: {
+        format: function(value, format, lng) {
+            if (value instanceof Date)
+                return moment(value).format(format);
+            return value;
+        },
+    },
+},
+function(err, t) {
+    // init set content
+    updateContent();
+}
+```
 	
 	---
 	

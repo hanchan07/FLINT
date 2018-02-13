@@ -46,15 +46,16 @@ Formatting dates and time is unnecessarily verbose in comparison to moment.js. W
 
 We have not looked at currency, however it appeared to be fairly simple with Intl.js but more work in other libraries.
 
-
 ## Presentation
 
-This repo also contains our Internationalization evaluation presentation.  This presentation uses a server-based version of (reveal.js)[https://github.com/hakimel/reveal.js#basic-setup].
+This repo also contains our Internationalization evaluation presentation. This presentation uses a server-based version of (reveal.js)[https://github.com/hakimel/reveal.js#basic-setup].
 
 The presentation resides in the `presentation` directory.
 
 To run the presentation:
- - `cd presentation`
- - `npm start`
+
+* `cd presentation`
+* `npm install`
+* `npm start`
 
 To show the speaker view, with the presentation running and in focus, press `S`.
