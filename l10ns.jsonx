@@ -1,0 +1,25 @@
+{
+  "defaultProject": "y",
+  "projects": {
+    "y": {
+      "timezones": [
+        "America/Los_Angeles"
+      ],
+      "currencies": [
+        "USD"
+      ],
+      "interface": {
+        "autoOpen": true,
+        "port": 3001
+      },
+      "languages": {
+        en-US:English,ja-JP: Japanese, hi-IN:Hindi
+      },
+      "defaultLanguage": "ja-JP",
+      "programmingLanguage": "javascript",
+      "store": "l10nsLocalizations/",
+      "output": "l10nsLocalizations/output",
+      "source": []
+    }
+  }
+}
